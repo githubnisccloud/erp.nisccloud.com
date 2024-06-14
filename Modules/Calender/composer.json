@@ -1,0 +1,27 @@
+{
+    "name": "workdo/calender",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nisc",
+            "email": "erp@nisccloud.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Calender\\": ""
+        }
+    },
+
+    "require": {
+        "spatie/laravel-google-calendar": "^3.5"
+    }
+}

@@ -50,8 +50,8 @@ class LandingPageDataTableSeeder extends Seeder
         $data['footer_live_demo_link'] = '#';
         $data['all_rights_reserve_text'] = 'All Rights Reserved to';
         $data['footer_support_link'] = '#';
-        $data['all_rights_reserve_website_name'] = 'workdo.io';
-        $data['all_rights_reserve_website_url'] = 'https://www.workdo.io';
+        $data['all_rights_reserve_website_name'] = 'nisccloud.com';
+        $data['all_rights_reserve_website_url'] = 'https://www.nisccloud.com';
         $data['footer_sections_details'] = '[{"footer_section_heading":"Company","footer_section_text":{"1":{"title":"About Us","link":"#"},"2":{"title":"Freebies","link":"#"},"3":{"title":"Premium","link":"#"},"4":{"title":"Blog","link":"#"},"5":{"title":"Affiliate Program","link":"#"},"6":{"title":"Get coupon","link":"#"}}},{"footer_section_heading":"Help and Support","footer_section_text":{"1":{"title":"Knowledge Center","link":"#"},"2":{"title":"Contact Us","link":"#"},"3":{"title":"Premium Support","link":"#"},"4":{"title":"Sponsorships","link":"#"},"5":{"title":"Custom Development","link":"#"}}},{"footer_section_heading":"Help and Support","footer_section_text":{"1":{"title":"Terms & Conditions","link":"#"},"2":{"title":"Privacy Policy","link":"#"},"3":{"title":"Licenses","link":"#"}}}]';
         $data['footer_gotoshop_button_text'] = 'Go to Shop';
         $data['footer_support_button_text'] = 'Support';

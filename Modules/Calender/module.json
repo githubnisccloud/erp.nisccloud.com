@@ -1,0 +1,12 @@
+{
+    "name": "Calender",
+    "alias": "Calender",
+    "description": "",
+    "keywords": [],
+    "priority": 870,
+    "version":3.0,
+    "providers": [
+        "Modules\\Calender\\Providers\\CalenderServiceProvider"
+    ],
+    "files": []
+}

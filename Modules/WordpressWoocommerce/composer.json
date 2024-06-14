@@ -1,0 +1,23 @@
+{
+    "name": "workdo/wordpresswoocommerce",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nisc",
+            "email": "erp@nisccloud.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\WordpressWoocommerce\\": ""
+        }
+    }
+}

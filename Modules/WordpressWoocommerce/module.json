@@ -1,0 +1,12 @@
+{
+    "name": "WordpressWoocommerce",
+    "alias": "WordPress (WooCommerce)",
+    "description": "",
+    "keywords": [],
+    "priority": 650,
+    "version":3.0,
+    "providers": [
+        "Modules\\WordpressWoocommerce\\Providers\\WordpressWoocommerceServiceProvider"
+    ],
+    "files": []
+}

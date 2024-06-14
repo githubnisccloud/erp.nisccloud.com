@@ -1,0 +1,13 @@
+{
+    "name": "VCard",
+    "alias": "vCard",
+    "description": "",
+    "keywords": [],
+    "priority": 70,
+    "version":3.0,
+    "providers": [
+        "Modules\\VCard\\Providers\\VCardServiceProvider",
+        "Modules\\VCard\\Providers\\EventServiceProvider"
+    ],
+    "files": []
+}

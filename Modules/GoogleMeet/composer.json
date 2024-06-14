@@ -1,0 +1,26 @@
+{
+    "name": "workdo/googlemeet",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nisc",
+            "email": "erp@nisccloud.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\GoogleMeet\\": ""
+        }
+    },
+    "require": {
+        "google/apiclient": "*"
+    }
+}

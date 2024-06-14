@@ -16,7 +16,7 @@
 
 <head>
 
-    
+
 
     <title>@yield('page-title') | {{!empty(admin_setting('title_text')) ? admin_setting('title_text') :'WorkDo-Dash' }}</title>
 
@@ -38,7 +38,7 @@
     <meta property="twitter:description" content="{{ !empty($settings['meta_description']) ? $settings['meta_description'] : 'Discover the efficiency of Dash, a user-friendly web application by Rajodiya Apps.'}} ">
     <meta property="twitter:image" content="{{ get_file( (!empty($settings['meta_image'])) ? (check_file($settings['meta_image'])) ?  $settings['meta_image'] : 'uploads/meta/meta_image.png' : 'uploads/meta/meta_image.png'  ) }}{{'?'.time() }}">
 
-    <meta name="author" content="Workdo.io">
+    <meta name="author" content="Nisc Cloud">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,7 +61,7 @@
             $body_fontfamily = $settings['body_fontfamily'];
         @endphp
         <style id="dynamic-fonts">
-            {!!  \Modules\LandingPage\Entities\LandingPageSetting::generateFontCSSFromJSON($body_fontfamily) !!} 
+            {!!  \Modules\LandingPage\Entities\LandingPageSetting::generateFontCSSFromJSON($body_fontfamily) !!}
         </style>
 
         <style>

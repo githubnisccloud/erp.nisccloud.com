@@ -82,8 +82,8 @@ class LandingPageSetting extends Model
             'footer_live_demo_link' =>'#',
             'all_rights_reserve_text' =>'All Rights Reserved to',
             'footer_support_link' =>'#',
-            'all_rights_reserve_website_name' =>'workdo.io',
-            'all_rights_reserve_website_url' =>'https://www.workdo.io',
+            'all_rights_reserve_website_name' =>'nisccloud.com',
+            'all_rights_reserve_website_url' =>'https://www.nisccloud.com',
             'footer_sections_details' =>'[{"footer_section_heading":"Company","footer_section_text":{"1":{"title":"About Us","link":"#"},"2":{"title":"Freebies","link":"#"},"3":{"title":"Premium","link":"#"},"4":{"title":"Blog","link":"#"},"5":{"title":"Affiliate Program","link":"#"},"6":{"title":"Get coupon","link":"#"}}},{"footer_section_heading":"Help and Support","footer_section_text":{"1":{"title":"Knowledge Center","link":"#"},"2":{"title":"Contact Us","link":"#"},"3":{"title":"Premium Support","link":"#"},"4":{"title":"Sponsorships","link":"#"},"5":{"title":"Custom Development","link":"#"}}},{"footer_section_heading":"Help and Support","footer_section_text":{"1":{"title":"Terms & Conditions","link":"#"},"2":{"title":"Privacy Policy","link":"#"},"3":{"title":"Licenses","link":"#"}}}]',
             'footer_gotoshop_button_text' =>'Go to Shop',
             'footer_support_button_text' =>'Support',
@@ -300,11 +300,11 @@ class LandingPageSetting extends Model
         return $family;
     }
 
-    public static function generateFontCSSFromJSON($family= null) 
+    public static function generateFontCSSFromJSON($family= null)
     {
         $fontArray = json_decode(file_get_contents('Modules/LandingPage/Resources/assets/assets/google_fonts.json'), true);
         $cssRules = [];
-    
+
         foreach ($fontArray as $font) {
 
             if ($family && $font['family'] !== $family) {
@@ -313,11 +313,11 @@ class LandingPageSetting extends Model
 
             $family = $font['family'];
             $files = $font['files'];
-    
+
             foreach ($files as $variant => $url) {
                 $fontWeight = ($variant == 'regular' || $variant == 'italic') ? '400' : '700';
                 $fontStyle = ($variant == 'italic') ? 'italic' : 'normal';
-    
+
                 $cssRules[] = "@font-face {
                     font-family: '{$family}';
                     src: url('{$url}');
@@ -326,7 +326,7 @@ class LandingPageSetting extends Model
                 }";
             }
         }
-    
+
         return implode("\n", $cssRules);
     }
 
@@ -376,7 +376,7 @@ class LandingPageSetting extends Model
 
     public static function addTermsAndPolicy()
     {
-        
+
         $datas['template_name'] = 'page_content';
         $settings = LandingPageSetting::settings();
         $data = json_decode($settings['menubar_page']);
@@ -392,7 +392,7 @@ class LandingPageSetting extends Model
                 {
                     $terms_and_conditions = 0;
                 }
-    
+
                 if($value->page_slug == 'privacy_policy')
                 {
                     $privacy_policy = 0;
@@ -411,7 +411,7 @@ class LandingPageSetting extends Model
             Data Protection: WorkDo Dash prioritizes user privacy and data protection, adhering to strict policies and regulations to safeguard sensitive information.
             Payment Terms: Users are responsible for adhering to the payment terms specified in the agreement, ensuring timely payments for services rendered.
             Intellectual Property Rights: WorkDo Dash respects intellectual property rights and expects users to do the same, refraining from infringing upon copyrights or trademarks associated with the platform.';
-    
+
             $terms['header']    = 'on';
             $terms['footer']    = 'on';
             $terms['login']     = 'on';
@@ -425,13 +425,13 @@ class LandingPageSetting extends Model
             $policy['template_name']         = 'page_content';
             $policy['menubar_page_short_description'] = 'Protecting your privacy is our priority at WorkDo Dash, ensuring your data is used transparently and securely.';
             $policy['menubar_page_contant'] = 'At WorkDo Dash, we prioritize your privacy and are committed to safeguarding your personal information. Our privacy policy outlines the types of data we collect, how we use it, and the measures we take to protect it. We collect information to enhance user experience, provide personalized services, and ensure the security of our platform. We do not share your personal data with third parties without your consent, except as required by law or to protect our rights. By using WorkDo Dash, you agree to the collection and use of information in accordance with this policy, ensuring transparency and trust in all our interactions.';
-    
+
             $policy['header']    = 'on';
             $policy['footer']    = 'on';
             $policy['login']     = 'on';
             $data[]              = $policy;
         }
-        
+
         LandingPageSetting::updateOrCreate(['name' =>  'menubar_page'],['value' => json_encode($data)]);
 
     }

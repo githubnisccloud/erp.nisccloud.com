@@ -39,7 +39,7 @@
     <meta property="twitter:image"
         content="{{ get_file(!empty($admin_settings['meta_image']) ? (check_file($admin_settings['meta_image']) ? $admin_settings['meta_image'] : 'uploads/meta/meta_image.png') : 'uploads/meta/meta_image.png') }}{{ '?' . time() }}">
 
-    <meta name="author" content="Workdo.io">
+    <meta name="author" content="Nisc Cloud">
 
     <!-- Meta -->
     <meta charset="utf-8" />

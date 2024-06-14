@@ -31,7 +31,7 @@
     <meta property="twitter:description" content="{{ !empty(admin_setting('meta_description')) ? admin_setting('meta_description') : 'Discover the efficiency of Dash, a user-friendly web application by Rajodiya Apps.'}} ">
     <meta property="twitter:image" content="{{ get_file( (!empty(admin_setting('meta_image'))) ? (check_file(admin_setting('meta_image'))) ?  admin_setting('meta_image') : 'uploads/meta/meta_image.png' : 'uploads/meta/meta_image.png'  ) }}{{'?'.time() }}">
 
-    <meta name="author" content="Workdo.io">
+    <meta name="author" content="Nisc Cloud">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,13 +49,13 @@
             --color-customColor: <?= $color ?>;
         }
     </style>
-    
+
     @if (isset($settings['body_fontfamily']))
         @php
             $body_fontfamily = $settings['body_fontfamily'];
         @endphp
         <style id="dynamic-fonts">
-            {!!  \Modules\LandingPage\Entities\LandingPageSetting::generateFontCSSFromJSON($body_fontfamily) !!} 
+            {!!  \Modules\LandingPage\Entities\LandingPageSetting::generateFontCSSFromJSON($body_fontfamily) !!}
         </style>
 
         <style>

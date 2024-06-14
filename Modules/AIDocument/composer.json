@@ -1,0 +1,26 @@
+{
+    "name": "workdo/aidocument",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nisc",
+            "email": "erp@nisccloud.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\AIDocument\\": ""
+        }
+    },
+    "require": {
+        "orhanerday/open-ai": "4.8"
+    }
+}

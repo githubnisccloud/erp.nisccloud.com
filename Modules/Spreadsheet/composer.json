@@ -1,0 +1,26 @@
+{
+    "name": "workdo/spreadsheet",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nisc",
+            "email": "erp@nisccloud.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Spreadsheet\\": ""
+        }
+    },
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29"
+    }
+}

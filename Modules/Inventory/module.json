@@ -1,0 +1,12 @@
+{
+    "name": "Inventory",
+    "alias": "Inventory",
+    "description": "",
+    "keywords": [],
+    "priority": 290,
+    "version":3.0,
+    "providers": [
+        "Modules\\Inventory\\Providers\\InventoryServiceProvider"
+    ],
+    "files": []
+}
